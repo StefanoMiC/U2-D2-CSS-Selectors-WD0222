@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing specificity</title>
+
+    <style>
+        #myTitleID {
+            color: palevioletred;
+        }
+
+
+        body .title-sm {
+            font-size: 0.8rem;
+        }
+
+        .hero img {}
+
+        .hero {}
+
+        .hero.bigger {
+            font-size: 2rem;
+        }
+
+        h2.title {
+            color: aqua;
+            font-size: 2rem;
+        }
+
+
+        h2 {
+            color: red;
+        }
+
+        label.btn,
+        input.btn,
+        a.btn,
+        button.btn {
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2 id="anotherID" class="title title-sm" style="font-size: 5rem">first awesome title!</h2>
+    <h2 id="myTitleID" class="title">another awesome title!</h2>
+
+</body>
+
+</html>
